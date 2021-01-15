@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rostelekom ChatBot</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css" rel="stylesheet">
+</head>
+
+<body>
+<div>
+    <div id="chat-click" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+    </div>
+    <div class="chat-box">
+        <div class="chat-box-body">
+
+            <div id="chat-box__wraper">
+                <div class="chat-box-header">
+                    Ростелеком
+                    <span class="chat-box-toggle"><i class="material-icons">cancel</i></span>
+                </div>
+
+                <div class="chat-box-overlay">
+                </div>
+                <div class="chat-logs">
+                    <div id="cm-msg-0" class="chat-msg bot">
+                        <div class="cm-msg-text">
+                            Здравствуйте! Чем могу помочь?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-box">
+            <form>
+                <input type="text" class="chat-input__text" id="chat-input__text" placeholder="Сообщение" />
+                <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./static/getNeuralResponse.js"></script>
+</body>
+</html>
+
